@@ -3,11 +3,12 @@
 
 # exit on any error
 set -e
-cd ~
+
 # functions
 update_app(){
+    cd ~
     echo "creating folder " $2 "/temp"
-    mkdir $2/temp
+    mkdir -p $2/temp
 
     if [ ${1:0:4} == "http" ]; then
         cd $2/temp
