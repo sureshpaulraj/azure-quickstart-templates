@@ -3,7 +3,7 @@
 
 # exit on any error
 set -e
-
+cd ~
 # functions
 update_app(){
     echo "creating folder " $2 "/temp"
